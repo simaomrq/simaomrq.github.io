@@ -198,8 +198,9 @@ permalink: /papers/
 			  Published in <i>Journal 1</i>, 2010
 		  </p>
 		  <p class="archive__item-excerpt" itemprop="description">
-		  <p>This paper is about the number 2. The number 3 is left for future work.
-		  </p>
+		  	<p>
+			  This paper is about the number 2. The number 3 is left for future work.
+		  	</p>
 		  </p>
 		  <p>Recommended citation: Your Name, You. (2010). &quot;Paper Title Number 2.&quot; 
 			  <i>Journal 1</i>. 1(2). 
@@ -234,24 +235,49 @@ permalink: /papers/
           	</article>
           </div>
           <div class="list__item">
-          <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork"><h2 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/publication/2010-10-01-paper-title-number-2" rel="permalink">Paper Title Number 2 </a></h2><p>Published in <i>Journal 1</i>, 2010</p><p class="archive__item-excerpt" itemprop="description"><p>This paper is about the number 2. The number 3 is left for future work.</p></p><p>Recommended citation: Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2). <a href="http://academicpages.github.io/files/paper2.pdf"><u>http://academicpages.github.io/files/paper2.pdf</u></a></p></article></div><div class="list__item"><article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork"><h2 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/publication/2009-10-01-paper-title-number-1" rel="permalink">Paper Title Number 1 </a></h2>
-				<p>
-					Published in <i>Journal 1</i>, 2009
-				</p>
-				<p class="archive__item-excerpt" itemprop="description">
-					<p>
-					This paper is about the number 1. The number 2 is left for future work.
-					</p>
-				</p>
-				<p>Recommended citation: Your Name, You. (2009). &quot;Paper Title Number 1.&quot; 		
-					<i>
-						Journal 1
-					</i>. 1(1). 
-					<a href="http://academicpages.github.io/files/paper1.pdf"><u>http://academicpages.github.io/files/paper1.pdf</u>
-					</a>
-				</p>
-			</article>
-		</div>
+          	<article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork"><h2 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/publication/2010-10-01-paper-title-number-2" rel="permalink">Paper Title Number 2 </a></h2><p>Published in <i>Journal 1</i>, 2010</p><p class="archive__item-excerpt" itemprop="description"><p>This paper is about the number 2. The number 3 is left for future work.</p></p><p>Recommended citation: Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2). <a href="http://academicpages.github.io/files/paper2.pdf"><u>http://academicpages.github.io/files/paper2.pdf</u></a></p></article></div><div class="list__item"><article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork"><h2 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/publication/2009-10-01-paper-title-number-1" rel="permalink">Paper Title Number 1 </a></h2>
+		<p>
+			Published in <i>Journal 1</i>, 2009
+		</p>
+		<p class="archive__item-excerpt" itemprop="description">
+			<p>
+				This paper is about the number 1. The number 2 is left for future work.
+			</p>
+		</p>
+		<p>Recommended citation: Your Name, You. (2009). &quot;Paper Title Number 1.&quot; 		
+			<i>Journal 1</i>. 1(1).
+			<a href="http://academicpages.github.io/files/paper1.pdf">
+				<u>http://academicpages.github.io/files/paper1.pdf</u>
+			</a>
+		</p>
+		</article>
 	</div>
-</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="Publications2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+Submitted & Under review
+
+{% bibliography --template bibtemplate --style _bibliography/cocolab.csl --query @*[year=Manuscript] %}
+To appear
+
+{% bibliography --template bibtemplate --style _bibliography/cocolab.csl --query @*[year=To appear] %}
+
+{% for year in (2006..{{site.max_year}}) reversed %}
+
+{{year}}
+
+{% bibliography --template bibtemplate --style _bibliography/cocolab.csl --query @*[year={{year}}] %}
+
+{% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
