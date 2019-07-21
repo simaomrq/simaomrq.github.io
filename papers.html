@@ -262,20 +262,7 @@ permalink: /papers/
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-Submitted & Under review
-
-{% bibliography --template bibtemplate --style _bibliography/cocolab.csl --query @*[year=Manuscript] %}
-To appear
-
-{% bibliography --template bibtemplate --style _bibliography/cocolab.csl --query @*[year=To appear] %}
-
-{% for year in (2006..{{site.max_year}}) reversed %}
-
-{{year}}
-
-{% bibliography --template bibtemplate --style _bibliography/cocolab.csl --query @*[year={{year}}] %}
-
-{% endfor %}
+		{% bibliography %}
         </div>
       </div>
     </div>
