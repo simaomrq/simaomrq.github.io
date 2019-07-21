@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Publications
-permalink: publications.html
+permalink: papers.html
 ---
 ## Submitted & Under review
 
