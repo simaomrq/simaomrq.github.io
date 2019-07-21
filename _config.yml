@@ -39,6 +39,5 @@ descriptions:
 gems: ['jekyll/scholar']
 
 scholar:
-  ...
   bibliography_template: bib
-  ...
+  use_raw_bibtex_entry: true
