@@ -262,7 +262,7 @@ permalink: /papers/
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-		{% cocolab %}
+		{% {% bibliography --template bibtemplate --style _bibliography/cocolab.csl --query @*[year=Manuscript] %} %}
         </div>
       </div>
     </div>
